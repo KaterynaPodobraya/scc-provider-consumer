@@ -4,7 +4,6 @@ import controller.SpringCloudContractConsumerApplication;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.json.AutoConfigureJsonTesters;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.cloud.contract.stubrunner.spring.AutoConfigureStubRunner;
@@ -20,7 +19,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = {SpringCloudContractConsumerApplication.class}, webEnvironment = SpringBootTest.WebEnvironment.MOCK)
 @AutoConfigureMockMvc
-@AutoConfigureJsonTesters
 @AutoConfigureStubRunner(stubsMode = StubRunnerProperties.StubsMode.LOCAL,
         ids = "scc-producer:scc-producer:+:stubs:8090")
 public class BasicMathControllerIntegrationTest {
