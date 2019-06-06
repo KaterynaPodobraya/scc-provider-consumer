@@ -18,11 +18,11 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = {SpringCloudContractConsumerApplication.class},webEnvironment = SpringBootTest.WebEnvironment.MOCK)
+@SpringBootTest(classes = {SpringCloudContractConsumerApplication.class}, webEnvironment = SpringBootTest.WebEnvironment.MOCK)
 @AutoConfigureMockMvc
 @AutoConfigureJsonTesters
 @AutoConfigureStubRunner(stubsMode = StubRunnerProperties.StubsMode.LOCAL,
-        ids = "com.baeldung.spring.cloud:spring-cloud-contract-producer:+:stubs:8090")
+        ids = "scc-producer:scc-producer:+:stubs:8090")
 public class BasicMathControllerIntegrationTest {
 
     @Autowired

@@ -42,7 +42,7 @@
         <dependency>
             <groupId>scc-producer</groupId>
             <artifactId>scc-producer</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.0.0-SNAPSHOT</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
