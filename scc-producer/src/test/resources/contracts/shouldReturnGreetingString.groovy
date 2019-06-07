@@ -10,7 +10,7 @@ Contract.make{
     response{
         status 200
         body"Hello Katya!!!"
-        //headers {headers.contentLength() == 100}
+        headers {headers.contentLength().toString().equals("222")}
         headers {header('Content-Length', "14")}
     }
 }
