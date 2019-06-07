@@ -14,6 +14,44 @@
         <module>scc-consumer</module>
     </modules>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>${spring-boot.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-rest</artifactId>
+            <version>${spring-boot.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-contract-wiremock</artifactId>
+            <version>${spring-cloud.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-contract-stub-runner</artifactId>
+            <version>${spring-cloud.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-contract-verifier</artifactId>
+            <version>${spring-cloud.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <!--<dependency>-->
+        <!--<groupId>org.springframework.restdocs</groupId>-->
+        <!--<artifactId>spring-restdocs-mockmvc</artifactId>-->
+        <!--<version>1.2.1.RELEASE</version>-->
+        <!--<scope>test</scope>-->
+        <!--</dependency>-->
+    </dependencies>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -45,6 +83,12 @@
                 <version>${spring-cloud.version}</version>
                 <scope>test</scope>
             </dependency>
+            <!--<dependency>-->
+                <!--<groupId>org.springframework.restdocs</groupId>-->
+                <!--<artifactId>spring-restdocs-mockmvc</artifactId>-->
+                <!--<version>1.2.1.RELEASE</version>-->
+                <!--<scope>test</scope>-->
+            <!--</dependency>-->
         </dependencies>
     </dependencyManagement>
 
