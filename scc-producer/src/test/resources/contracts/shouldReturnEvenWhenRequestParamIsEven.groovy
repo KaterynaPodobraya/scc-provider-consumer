@@ -16,4 +16,5 @@ Contract.make {
         body("Even")
         status 200
     }
+    priority(10)
 }

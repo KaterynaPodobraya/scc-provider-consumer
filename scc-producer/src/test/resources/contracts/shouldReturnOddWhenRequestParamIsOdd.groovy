@@ -8,7 +8,7 @@ Contract.make {
         method GET()
         url("/validate/prime-number") {
             queryParameters {
-                parameter("number", "1")
+                parameter"number", "1"
             }
         }
     }
@@ -16,4 +16,5 @@ Contract.make {
         body("Odd")
         status 200
     }
+    priority(1)
 }
